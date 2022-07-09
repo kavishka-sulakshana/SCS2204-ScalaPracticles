@@ -16,23 +16,23 @@ object Q3{
 
         // a) output -> 24
         b-=1
-        printf("%d",b*a+c*d)
+        printf("%d\n",b*a+c*d)
         d-=1
 
         // b) output -> 2
-        printf("%d",a)
+        printf("%d\n",a)
         a+=1
 
         // c) output -> no value for g??
-        printf("%f",-2*(g-k)+c)
+        // printf("%f",-2*(g-k)+c)
 
         // d) output -> 4
-        printf("%d",c)
+        printf("%d\n",c)
         c += 1
 
         // e) output -> 10
         c += 1
-        printf("%d",c*a)
+        printf("%d\n",c*a)
         a += 1
     }
 }
