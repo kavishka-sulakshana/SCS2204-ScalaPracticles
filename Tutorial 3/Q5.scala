@@ -1,11 +1,9 @@
 object Q5 extends App{
-    var a=2
-    var b=2
+    def easy(d:Int):Int = 8*d
+    def tempo(d:Int):Int = 7*d
 
-    if(a==1)
-    if(b==1)
-    println("***")
-    else
-    println("###")
-    println("===")
+    def total():Int = easy(2)+tempo(3)+easy(2)
+
+    println(total())
+
 }
