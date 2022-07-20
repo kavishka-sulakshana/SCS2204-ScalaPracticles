@@ -4,4 +4,3 @@
     var f = 12.0f
     var g = 4.0f
     c = 'X'
-    kkjshd hdhdhdhdbdbd  
