@@ -4,5 +4,5 @@ object Question2 extends App{
         case x if x%2==0 => println("Even")
         case x if x%2==1 => println("Odd")
     }
-    oddEven(-3)
+    oddEven(16)
 }
