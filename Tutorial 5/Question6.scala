@@ -1,14 +1,20 @@
 object Question6 extends App{
-    def febonacci(n:Int):Int = n match {
+    def fibonacci(n:Int):Int = n match {
         case 0 => 0
         case 1 => 1
-        case _ => febonacci(n-1)+febonacci(n-2)
+        case _ => fibonacci(n-1)+fibonacci(n-2)
     }
 
-    def febSum(n:Int):Int = n match {
-        case 0 => febonacci(0)
-        case _ => febonacci(n) + febSum(n-1)
+    def fibSeq(n:Int, i:Int = 0):Any = {
+        println(fibonacci(i))
+        if(n>i) fibSeq(n,i+1)
     }
 
-    println(febSum(6))
+    // def fibSum(n:Int):Int = n match {
+    //     case 0 => fibonacci(0)
+    //     case _ => fibonacci(n) + fibSum(n-1)
+    // }
+
+
+    println(fibSeq(10))
 }
