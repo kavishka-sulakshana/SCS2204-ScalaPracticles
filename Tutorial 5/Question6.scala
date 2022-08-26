@@ -16,5 +16,5 @@ object Question6 extends App{
     // }
 
 
-    println(fibSeq(10))
+    fibSeq(10)
 }
