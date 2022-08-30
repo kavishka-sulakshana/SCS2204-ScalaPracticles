@@ -6,5 +6,5 @@ object Question1 extends App{
         case _ => isPrime(n,m+1) 
     }
 
-    println(isPrime(1))
+    println(isPrime(2))
 }

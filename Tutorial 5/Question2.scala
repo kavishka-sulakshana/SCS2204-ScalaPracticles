@@ -10,5 +10,5 @@ object Question2 extends App{
         if (n>m) primeSeq(n,m+1) 
     }
 
-    primeSeq(10)
+    primeSeq(7)
 }

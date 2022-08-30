@@ -4,5 +4,5 @@ object Question3 extends App{
         case _ => n + sum(n-1)
     }
 
-    print(sum(5))
+    println(sum(5))
 }
