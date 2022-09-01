@@ -24,8 +24,9 @@ object Question01 extends App{
         case _ => s
     } 
     
-    // encrypt and decrypt functions
+    // encrypt function
     def encrypt(text:String, key:Int):String = makeString(encArray(text,key%26))
+    // decrypt function
     def decrypt(etext:String, key:Int):String = makeString(encArray(etext,-(key%26)))
     
     // Cypher function
