@@ -10,8 +10,6 @@ object Question01 extends App{
         case x if (65 <= x.toInt && x.toInt <= 90 && x.toInt + key < 65) => (c.toInt+key+26).toChar
         case x if (97 <= x.toInt && x.toInt <= 122 && x.toInt + key > 122) => (c.toInt+key-26).toChar 
         case x if (97 <= x.toInt && x.toInt <= 122 && x.toInt + key < 97) => (c.toInt+key+26).toChar 
-        case x if (48 <= x.toInt && x.toInt <= 57 && x.toInt + key > 57) => (c.toInt+key-10).toChar
-        case x if (48 <= x.toInt && x.toInt <= 57 && x.toInt + key < 48) => (c.toInt+key+10).toChar
         case _ => (c.toInt + key).toChar
     }
 
@@ -31,8 +29,16 @@ object Question01 extends App{
     
     // Cypher function
     val Cipher = (text:String,key:Int,method:(String,Int)=>String) => method(text,key)
-
-    println(Cipher("This is an encryption method",10,encrypt(_,_)))
-    println(Cipher("Drsc sc kx oxmbizdsyx wodryn",10,decrypt(_,_)))
+    
+    print("Encrypt - 1 \nDecrypt - 2 \nEnter decision: ")
+    var Type = scala.io.StdIn.readInt()
+    var text = scala.io.StdIn.readLine("Enter your text : ")
+    print("Enter the key : ")
+    var key = scala.io.StdIn.readInt()
+    Type match {
+        case 1 => println(Cipher(text,key,encrypt(_,_)))
+        case 2 => println(Cipher(text,key,decrypt(_,_)))
+        case _ => println("invalid")
+    }    
 }
 
